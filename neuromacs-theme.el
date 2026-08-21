@@ -1,6 +1,6 @@
 ;;; neuromacs.el --- Motor central do tema Neuromacs -*- lexical-binding: t; -*-
 
-(defgroup neuromacs nil
+(defgroup neuromacs-theme nil
   "Customizações para o ecossistema de temas Neuromacs."
   :group 'faces)
 
@@ -8,7 +8,7 @@
   "Alist permitindo que o usuário substitua cores específicas do tema.
 Exemplo: '((bg-main . \"#111111\") (fg-main . \"#eeeeee\"))"
   :type '(alist :key-type symbol :value-type string)
-  :group 'neuromacs)
+  :group 'neuromacs-theme)
 
 (defun neuromacs--apply-theme (theme palette)
   "Função de trabalho (runtime) que aplica as FACES e VARIABLES do THEME usando a PALETTE.
@@ -327,4 +327,4 @@ Faz merge com `neuromacs-palette-overrides` para permitir customização."
   (add-to-list 'custom-theme-load-path
                (file-name-directory load-file-name)))
 
-(provide 'neuromacs)
+(provide 'neuromacs-theme)

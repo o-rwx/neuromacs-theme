@@ -1,5 +1,5 @@
 ;; -*- lexical-binding: t; -*-
-(require 'neuromacs)
+(require 'neuromacs-theme)
 
 (defvar neuro-mesopic-palette
   '(;; Base estrutural (Fundo Carvão Fosco, previne Efeito de Halo e preserva melatonina)[cite: 1]

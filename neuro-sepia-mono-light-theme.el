@@ -1,5 +1,5 @@
 ;; -*- lexical-binding: t; -*-
-(require 'neuromacs)
+(require 'neuromacs-theme)
 
 (defvar neuro-sepia-mono-light-palette
   '(;; Base estrutural (Papel Pólen orgânico)

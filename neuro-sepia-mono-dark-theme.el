@@ -1,5 +1,5 @@
 ;; -*- lexical-binding: t; -*-
-(require 'neuromacs)
+(require 'neuromacs-theme)
 
 (defvar neuro-sepia-mono-dark-palette
   '(;; Base estrutural (Fundo Café Torrado)

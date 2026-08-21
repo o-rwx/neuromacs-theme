@@ -1,5 +1,5 @@
 ;; -*- lexical-binding: t; -*-
-(require 'neuromacs)
+(require 'neuromacs-theme)
 
 (defvar neuro-sepia-photopic-palette
   '(;; Base estrutural (Simula papel pólen orgânico para máxima absorção de luz azul)

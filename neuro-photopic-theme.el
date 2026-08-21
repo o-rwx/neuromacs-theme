@@ -1,5 +1,5 @@
 ;; -*- lexical-binding: t; -*-
-(require 'neuromacs)
+(require 'neuromacs-theme)
 
 (defconst neuro-photopic-palette
   '(;; Base estrutural herdada da paleta Neuro (Fundo Branco-Papiro e mitigação de fadiga)

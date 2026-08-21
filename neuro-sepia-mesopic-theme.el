@@ -1,5 +1,5 @@
 ;; -*- lexical-binding: t; -*-
-(require 'neuromacs)
+(require 'neuromacs-theme)
 
 (defvar neuro-sepia-mesopic-palette
   '(;; Base estrutural (Fundo Café Torrado escuro, elimina halo e preserva melatonina)
