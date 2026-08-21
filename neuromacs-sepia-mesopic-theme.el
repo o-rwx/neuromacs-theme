@@ -31,6 +31,6 @@
     (syn-function . "#7698b3")
     (syn-comment  . "#61574f")))
 
-(neuromacs-define-theme neuro-sepia-mesopic
+(neuromacs-define-theme neuromacs-sepia-mesopic
                         "Sepia Mesopic Theme."
                         neuromacs-sepia-mesopic-palette)
