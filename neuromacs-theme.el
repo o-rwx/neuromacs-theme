@@ -1,4 +1,15 @@
-;;; neuromacs.el --- Motor central do tema Neuromacs -*- lexical-binding: t; -*-
+;;; neuromacs-theme.el --- Motor central do tema Neuromacs -*- lexical-binding: t; -*-
+
+;; Author: o-rwx
+;; URL: https://github.com/o-rwx/neuromacs-theme
+;; Version: 0.1.0
+;; Package-Requires: ((emacs "24.1"))
+
+;;; Commentary:
+;;
+;; A scientifically designed Emacs color theme built to mitigate visual fatigue.
+;;
+;;; Code:
 
 (defgroup neuromacs-theme nil
   "Customizações para o ecossistema de temas Neuromacs."
@@ -6,13 +17,13 @@
 
 (defcustom neuromacs-palette-overrides nil
   "Alist permitindo que o usuário substitua cores específicas do tema.
-Exemplo: '((bg-main . \"#111111\") (fg-main . \"#eeeeee\"))"
+   Exemplo: '((bg-main . \"#111111\") (fg-main . \"#eeeeee\"))"
   :type '(alist :key-type symbol :value-type string)
   :group 'neuromacs-theme)
 
 (defun neuromacs--apply-theme (theme palette)
   "Função de trabalho (runtime) que aplica as FACES e VARIABLES do THEME usando a PALETTE.
-Faz merge com `neuromacs-palette-overrides` para permitir customização."
+   Faz merge com `neuromacs-palette-overrides` para permitir customização."
   (let* (;; 1. Merge da paleta base com as customizações do usuário
          (colors (append neuromacs-palette-overrides palette))
 
@@ -52,8 +63,6 @@ Faz merge com `neuromacs-palette-overrides` para permitir customização."
          (syn-function (or (alist-get 'syn-function colors) fg-main))
          (syn-comment  (or (alist-get 'syn-comment colors) fg-neutral)))
 
-    ;; Note que como agora estamos em um defun, as faces ficam limpas
-    ;; e seguras de vazamentos de expansão de macro.
     (custom-theme-set-faces
      theme
 
