@@ -12,18 +12,16 @@
 ;;; Code:
 
 (defgroup neuromacs-theme nil
-  "Customizações para o ecossistema de temas Neuromacs."
+  "Neuromacs theme custom group."
   :group 'faces)
 
 (defcustom neuromacs-palette-overrides nil
-  "Alist permitindo que o usuário substitua cores específicas do tema.
-   Exemplo: '((bg-main . \"#111111\") (fg-main . \"#eeeeee\"))"
+  "List to change specific colors."
   :type '(alist :key-type symbol :value-type string)
   :group 'neuromacs-theme)
 
 (defun neuromacs--apply-theme (theme palette)
-  "Função de trabalho (runtime) que aplica as FACES e VARIABLES do THEME usando a PALETTE.
-   Faz merge com `neuromacs-palette-overrides` para permitir customização."
+  "Function to merge customized colors to the main THEME if ha one and apply the whole thing."
   (let* (;; 1. Merge da paleta base com as customizações do usuário
          (colors (append neuromacs-palette-overrides palette))
 
@@ -324,7 +322,7 @@
 
 ;;; MACRO DE ENTRYPOINT
 (defmacro neuromacs-define-theme (theme docstring palette)
-  "Aplica as regras estruturais e abrangentes para o THEME usando a PALETTE."
+  "Apply strucutral rules to THEME using the PALETTE."
   `(progn
      (deftheme ,theme ,docstring)
      ;; Devolvemos a carga pesada para a função em tempo de execução
