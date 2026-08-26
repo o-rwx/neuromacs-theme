@@ -9,6 +9,9 @@
 ;;
 ;; A scientifically designed Emacs color theme built to mitigate visual fatigue.
 ;;
+;; Research Note: Contrast ratio calibrated to prevent
+;; overstimulation of the magnocellular pathway at high spatial frequencies.
+
 ;;; Code:
 
 (defgroup neuromacs-theme nil
@@ -85,6 +88,7 @@
      `(link ((t (:foreground ,fg-blue :underline t))))
      `(link-visited ((t (:foreground ,fg-magenta :underline t))))
      `(tooltip ((t (:background ,bg-shadow-intense :foreground ,fg-main))))
+     `(show-paren-match ((t (:background ,bg-shadow-intense :foreground ,fg-main :weight bold))))
 
      ;; ==========================================
      ;; 2. FONT-LOCK UNIVERSAL (Código)

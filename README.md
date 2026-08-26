@@ -1,4 +1,4 @@
-# Neuromacs Emacs Theme
+# Neuromacs Theme
 
 A scientifically designed Emacs color theme built from the ground up to mitigate visual fatigue (asthenopia) and neurological exhaustion for professionals and academics facing extreme screen time (6-9 hours daily) of reading, writing, and coding.
 
@@ -28,6 +28,3 @@ The night/mesopic palettes are specifically engineered to avoid triggering the i
 ## Installation
 
 *[To be written]*
-
-## Golden Rule of Usage
-A theme can only do so much if your hardware is poorly calibrated. **Always perform the White Paper Test**: Hold a blank sheet of white paper next to your monitor under your current room lighting. Adjust your screen brightness until the white background of your editor emits the exact same amount of light as the paper reflects.
